@@ -319,6 +319,11 @@
   "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-6.3.1.tgz"
   "version" "6.3.1"
 
+"@fontsource/mulish@^4.5.10":
+  "integrity" "sha512-7oywPzRLjxT0j746/AWo5HQrmJmt9Sn2IUiSuOq2lkfpVQY9nUBqbNGjVH9QSdx5E9LkxX3g7Y0R9zl+s2SGgg=="
+  "resolved" "https://registry.npmjs.org/@fontsource/mulish/-/mulish-4.5.11.tgz"
+  "version" "4.5.11"
+
 "@humanwhocodes/config-array@^0.9.2":
   "integrity" "sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.5.tgz"

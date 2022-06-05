@@ -14,7 +14,8 @@
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "@tanem/react-nprogress": "^5.0.0"
+    "@tanem/react-nprogress": "^5.0.0",
+    "@fontsource/mulish": "^4.5.10"
   },
   "devDependencies": {
     "@types/node": "17.0.40",
