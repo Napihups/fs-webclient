@@ -10,7 +10,9 @@ export const Footer: React.FC = () => {
       className="footer footer-center bg-primary text-primary-content p-10 border-t-2 border-t-base-200"
     >
       <div>
-        <LogoPlainWhite />
+        <div className="scale-75">
+          <LogoPlainWhite />
+        </div>
         <p className="font-bold">{FIXTURES.footer.company_name}</p>
         <p>{FIXTURES.footer.copyright}</p>
       </div>

@@ -5,7 +5,7 @@ describe("Footer Static UI Snapshot", () => {
   it("Static textual test on Footer", async () => {
     render(<Footer />);
 
-    await screen.getByText("Famspace Pte Ltd.");
+    await screen.getByText("Napigo Pte Ltd.");
     await screen.getByText("Copyright © 2022 - All right reserved");
   });
   it("Footer background should be using primary color", async () => {
