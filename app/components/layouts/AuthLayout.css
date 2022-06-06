@@ -1,0 +1,9 @@
+.authLayout {
+  @apply flex flex-col;
+}
+.authLayout__content {
+  @apply container
+   mx-auto 
+   max-w-[800px] 
+    h-screen;
+}

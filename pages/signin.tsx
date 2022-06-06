@@ -1,3 +1,5 @@
+import { AuthLayout } from "@layout/AuthLayout";
+import { SignInTemplate } from "@template/SignInTemplate";
 import { NextPage } from "next";
 import Head from "next/head";
 
@@ -7,7 +9,11 @@ const SignIn: NextPage = () => {
       <Head>
         <title>Sign In</title>
       </Head>
-      <main></main>
+      <main>
+        <AuthLayout>
+          <SignInTemplate />
+        </AuthLayout>
+      </main>
     </>
   );
 };
