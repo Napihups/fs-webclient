@@ -1,0 +1,13 @@
+.signinGreeting {
+  @apply flex 
+  flex-col 
+  h-auto
+  w-[270px]
+  m-auto;
+}
+.signinGreeting__greeting {
+  @apply text-3xl font-black;
+}
+.signinGreeting__info {
+  @apply text-base-content py-5 border-[0px] mt-4 dark:text-white;
+}

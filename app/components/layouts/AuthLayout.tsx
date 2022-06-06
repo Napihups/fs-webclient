@@ -1,4 +1,4 @@
-import { Footer } from "@element/footer/Footer";
+import { Footer } from "@element/Footer/Footer";
 import React, { ReactNode } from "react";
 
 type AuthLayoutProps = {

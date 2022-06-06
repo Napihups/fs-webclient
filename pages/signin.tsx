@@ -1,5 +1,5 @@
+import { SignInGreeting } from "@element/SigninGreeting/SigninGreeting";
 import { AuthLayout } from "@layout/AuthLayout";
-import { SignInTemplate } from "@template/SignInTemplate";
 import { NextPage } from "next";
 import Head from "next/head";
 
@@ -11,7 +11,7 @@ const SignIn: NextPage = () => {
       </Head>
       <main>
         <AuthLayout>
-          <SignInTemplate />
+          <SignInGreeting />
         </AuthLayout>
       </main>
     </>

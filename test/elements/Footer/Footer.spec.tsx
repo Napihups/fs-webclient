@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { Footer } from "@element/footer/Footer";
+import { Footer } from "@element/Footer/Footer";
 
-describe("Footer Static UI Snapshot", () => {
+describe("Footer Static UI Test &  Snapshot", () => {
   it("Static textual test on Footer", async () => {
     render(<Footer />);
 

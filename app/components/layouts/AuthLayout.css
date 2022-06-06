@@ -3,7 +3,8 @@
 }
 .authLayout__content {
   @apply container
-   mx-auto 
-   max-w-[800px] 
-    h-screen;
+  mx-auto 
+  max-w-[800px] 
+  h-screen 
+  grid grid-cols-2;
 }

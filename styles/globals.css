@@ -21,3 +21,5 @@ a {
 
 /** Importing all css modules -------------------------*/
 @import "../app/components/layouts/AuthLayout.css";
+
+@import "../app/components/elements/SigninGreeting/SigninGreeting.css";
