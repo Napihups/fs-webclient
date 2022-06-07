@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Static UI Test &  Snapshot Footer Snapshot changes test 1`] = `
+exports[`Footer Static UI Test &  Snapshot Static: Footer Snapshot changes test 1`] = `
 <footer
   aria-label="Famspace Company metadata"
   class="footer footer-center bg-primary text-primary-content p-10 border-t-2 border-t-base-200"

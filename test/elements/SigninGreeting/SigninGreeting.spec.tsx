@@ -4,19 +4,19 @@ import { screen, render } from "@testing-library/react";
 const useTheme = jest.spyOn(require("@hook/useTheme"), "useTheme");
 
 describe("SigninGreeting UI Test & Testing", () => {
-  it("SigninGreeting static text display should be correct", async () => {
+  test("Static: SigninGreeting static text display should be correct", async () => {
     render(<SignInGreeting />);
 
     await screen.findByText("Welcome Back to");
     await screen.findByText("Sign in to continue with your account.");
   });
 
-  it("SigninGreeting Snapshot test", async () => {
+  test("Static: SigninGreeting Snapshot test", async () => {
     const comp = render(<SignInGreeting />);
     expect(comp).toMatchSnapshot();
   });
 
-  it("SigninGreeting should dark logo for dark theme", async () => {
+  test("Behaviour: SigninGreeting should dark logo for dark theme", async () => {
     useTheme.mockImplementation(() => {
       return "dark";
     });
@@ -27,7 +27,7 @@ describe("SigninGreeting UI Test & Testing", () => {
     expect(targetDark).toBeDefined();
   });
 
-  it("SigninGreeting should light logo for light theme", async () => {
+  test("Behaviour: SigninGreeting should light logo for light theme", async () => {
     useTheme.mockImplementation(() => {
       return "light";
     });

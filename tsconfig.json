@@ -23,6 +23,7 @@
       "@template/*": ["app/components/templates/*"],
       "@constant/*": ["app/constants/*"],
       "@context/*": ["app/context/*"],
+      "@schemas/*": ["app/schemas/*"],
       "@hook/*": ["app/hooks/*"],
       "@util/*": ["app/utils/*"],
       "@api/*": ["app/api/*"],

@@ -1,0 +1,24 @@
+.signInForm {
+  @apply h-[auto]
+  w-full
+  flex 
+  flex-col
+  m-auto;
+}
+
+.signInForm__title {
+  @apply text-base-content
+  text-lg
+  font-normal;
+}
+
+.signInForm__formControl {
+  @apply form-control w-full p-0 my-2;
+}
+
+.signInForm__showPassword {
+  @apply form-control flex flex-row items-center w-full justify-end mb-4;
+}
+.signInForm__formError {
+  @apply alert bg-transparent text-error my-2 pl-0 py-1 flex flex-row justify-center;
+}

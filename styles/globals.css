@@ -23,3 +23,5 @@ a {
 @import "../app/components/layouts/AuthLayout.css";
 
 @import "../app/components/elements/SigninGreeting/SigninGreeting.css";
+
+@import "../app/components/modules/SignInForm/SignInForm.css";

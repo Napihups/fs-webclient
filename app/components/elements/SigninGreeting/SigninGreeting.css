@@ -6,8 +6,8 @@
   m-auto;
 }
 .signinGreeting__greeting {
-  @apply text-3xl font-black;
+  @apply text-2xl mb-4 font-black;
 }
 .signinGreeting__info {
-  @apply text-base-content py-5 border-[0px] mt-4 dark:text-white;
+  @apply py-5 border-[0px] mt-4 text-base-content;
 }
