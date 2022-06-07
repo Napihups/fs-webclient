@@ -1,5 +1,5 @@
 .appDrawer {
-  @apply fixed w-[260px] h-screen bg-base-200;
+  @apply fixed w-[260px] h-screen bg-base-200 flex flex-col justify-between;
 }
 
 .appDrawer__logobox {
@@ -23,6 +23,7 @@
 .appDrawer__menu li {
   @apply btn
   btn-outline
+  text-base-content
   hover:bg-primary
   hover:border-primary
   hover:text-primary-content
@@ -38,5 +39,12 @@
 }
 
 .appDrawer__menuText {
-  @apply ml-2;
+  @apply ml-3;
+}
+
+.appDrawer__toggler {
+  @apply btn text-base-content  bg-transparent border-transparent hover:bg-transparent hover:border-transparent mx-[20px] mb-[20px];
+}
+.appDrawer__themeSwitch {
+  @apply btn  text-base-content bg-transparent border-transparent hover:bg-transparent hover:border-transparent mx-[20px] mb-[20px];
 }

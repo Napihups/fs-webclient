@@ -1,11 +1,11 @@
+import { useAppTheme } from "@common/AppTheme";
 import { FIXTURES } from "@constant/fixtures";
 import { LogoDark } from "@element/Logo/LogoDark";
 import { LogoLight } from "@element/Logo/LogoLight";
-import { useTheme } from "@hook/useTheme";
 import React from "react";
 
 export const SignInGreeting: React.FC = () => {
-  const theme = useTheme();
+  const { theme } = useAppTheme();
 
   return (
     <div className="signinGreeting">

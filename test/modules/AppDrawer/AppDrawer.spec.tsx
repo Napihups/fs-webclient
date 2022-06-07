@@ -46,7 +46,9 @@ describe("AppDrawer UI test", () => {
     await user.click(toggler);
 
     await new Promise(process.nextTick);
-
-    expect(await screen.findByTestId("LogoGeometric")).toBeDefined();
+    await waitFor(() => {
+      expect(screen.getByTestId("LogoGeometric")).toBeDefined();
+    });
+    // expect(await screen.findByTestId("LogoGeometric")).toBeDefined();
   });
 });

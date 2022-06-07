@@ -4,7 +4,7 @@ export const useTheme = () => {
   const [theme, setTheme] = useState<string>("");
 
   useEffect(() => {
-    setTheme(window.localStorage.getItem("data-theme") ?? "dark");
+    setTheme(window.localStorage.getItem("data-theme") ?? "light");
   }, []);
 
   return theme;
