@@ -2,6 +2,8 @@ import { screen, render, cleanup, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { AppDrawer } from "@module/AppDrawer/AppDrawer";
 
+const DRAWER_EXPAND_WIDTH = "260px";
+
 describe("AppDrawer UI test", () => {
   afterEach(() => {
     cleanup();
@@ -34,7 +36,7 @@ describe("AppDrawer UI test", () => {
     render(<AppDrawer />);
 
     const drawer = screen.getByRole("navigation");
-    expect(drawer.style.width).toBe("260px");
+    expect(drawer.style.width).toBe(DRAWER_EXPAND_WIDTH);
   });
   test("Testcase: The logo display on the drawer should change when user toggling", async () => {
     const user = userEvent.setup();

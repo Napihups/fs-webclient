@@ -12,3 +12,31 @@
 .appDrawer__logo {
   @apply scale-50;
 }
+
+.appDrawer__menu {
+  @apply list-none
+  flex flex-col
+  gap-2
+  px-[10px]
+  m-0 overflow-hidden;
+}
+.appDrawer__menu li {
+  @apply btn
+  btn-outline
+  hover:bg-primary
+  hover:border-primary
+  hover:text-primary-content
+  pl-[20px] 
+  min-w-[200px]
+  border-transparent 
+  flex 
+  flex-row 
+  items-center 
+  justify-start 
+  normal-case
+  font-normal;
+}
+
+.appDrawer__menuText {
+  @apply ml-2;
+}
