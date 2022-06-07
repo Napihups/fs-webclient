@@ -94,7 +94,7 @@ describe("SignInForm UI Test", () => {
     const loginButton = await screen.findByText("Login");
 
     await user.type(emailInput, "napi@gmail.com");
-    await user.type(passwordInput, "lalala");
+    await user.type(passwordInput, "lala");
 
     await user.click(loginButton);
 

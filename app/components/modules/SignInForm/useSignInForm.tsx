@@ -16,7 +16,7 @@ export const useSignInForm = () => {
 
     email.blur();
     password.blur();
-
+    setFormError(null);
     const { error, value } = SignInFormSchema.validate({
       email: email.value,
       password: password.value,

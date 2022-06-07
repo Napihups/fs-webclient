@@ -6,7 +6,7 @@ export const SignInFormSchema = Joi.object({
     .rule({ message: "Invalid email address" })
     .required(),
   password: Joi.string()
-    .ruleset.pattern(new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/))
+    .ruleset.min(6)
     .rule({ message: "Please provide a valid password" })
     .required(),
 });
