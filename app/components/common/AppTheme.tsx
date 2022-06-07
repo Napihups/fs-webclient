@@ -19,9 +19,18 @@ export const useAppTheme = () => {
 type AppThemeProviderProps = {
   children: ReactNode;
 };
-export const AppThemeProvider: React.FC<AppThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>("dark");
 
+/**
+ * Set the default theme to Dark
+ */
+const DEFAULT_THEME = "dark";
+
+export const AppThemeProvider: React.FC<AppThemeProviderProps> = ({ children }) => {
+  const [theme, setTheme] = useState<Theme>(DEFAULT_THEME);
+
+  useEffect(() => {
+    setTheme((window.localStorage.getItem("data-theme") as Theme) ?? DEFAULT_THEME);
+  }, []);
   useEffect(() => {
     const html = document.getElementsByTagName("html");
     html[0].setAttribute("data-theme", theme);

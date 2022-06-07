@@ -94,7 +94,7 @@ export const AppDrawer: React.FC = () => {
 
         <div className="flex flex-col">
           <label className="appDrawer__themeSwitch swap swap-rotate">
-            <input type="checkbox" onChange={onChangeTheme} />
+            <input type="checkbox" defaultChecked={theme === "dark"} onChange={onChangeTheme} />
             <ThemeDarkIcon className="swap-off fill-current w-8 h-8" />
             <ThemeLightIcon className="swap-on fill-current w-8 h-8" />
           </label>
