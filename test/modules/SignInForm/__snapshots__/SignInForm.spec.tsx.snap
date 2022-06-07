@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SignInForm UI Static & Behaviour Test Static: All UI static textual should be as per requirement & snapshot 1`] = `
+exports[`SignInForm UI Test Static: All UI static textual should be as per requirement & snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

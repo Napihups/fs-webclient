@@ -15,4 +15,14 @@ export const FIXTURES = {
       signUpButtonText: "Sign Up",
     },
   },
+  appDrawer: {
+    menuTexts: {
+      home: "Home",
+      finance: "Finance",
+      calendar: "Calendar",
+      timelines: "Timeline",
+      diary: "Diary",
+      setting: "Settings",
+    },
+  },
 };

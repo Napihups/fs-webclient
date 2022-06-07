@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-describe("SignInForm UI Static & Behaviour Test", () => {
+describe("SignInForm UI Test", () => {
   let emit: any;
 
   beforeAll(() => {

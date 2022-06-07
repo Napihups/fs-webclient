@@ -25,3 +25,4 @@ a {
 @import "../app/components/elements/SigninGreeting/SigninGreeting.css";
 
 @import "../app/components/modules/SignInForm/SignInForm.css";
+@import "../app/components/modules/AppDrawer/AppDrawer.css";
