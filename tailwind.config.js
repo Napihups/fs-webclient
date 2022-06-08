@@ -5,10 +5,12 @@ module.exports = {
       fontFamily: [""],
     },
   },
+  plugins: [require("daisyui")],
+
   daisyui: {
     themes: [
       {
-        dark: {
+        fsDark: {
           primary: "#037C66",
           "primary-focus": "#03705C",
           "primary-content": "#FFFFFF",
@@ -34,7 +36,7 @@ module.exports = {
           warning: "#FBBD23",
           "warning-content": "#382800",
         },
-        light: {
+        fsLight: {
           primary: "#037C66",
           "primary-focus": "#03705C",
           "primary-content": "#FFFFFF",
@@ -61,6 +63,6 @@ module.exports = {
         },
       },
     ],
+    darkTheme: "fsDark",
   },
-  plugins: [require("daisyui")],
 };

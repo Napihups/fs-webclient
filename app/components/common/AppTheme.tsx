@@ -1,6 +1,6 @@
 import React, { ReactNode, useContext, useEffect, useState } from "react";
 
-type Theme = "light" | "dark";
+type Theme = "fsLight" | "fsDark";
 
 type AppThemeContextProps = {
   theme: Theme;
@@ -8,7 +8,7 @@ type AppThemeContextProps = {
 };
 
 const AppthemeContext = React.createContext<AppThemeContextProps>({
-  theme: "dark",
+  theme: "fsDark",
   setTheme: () => {},
 });
 
@@ -23,7 +23,7 @@ type AppThemeProviderProps = {
 /**
  * Set the default theme to Dark
  */
-const DEFAULT_THEME = "dark";
+const DEFAULT_THEME = "fsDark";
 
 export const AppThemeProvider: React.FC<AppThemeProviderProps> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(DEFAULT_THEME);

@@ -26,7 +26,7 @@ export const AppDrawer: React.FC = () => {
   const onChangeTheme = (ev: React.ChangeEvent<HTMLInputElement>) => {
     const checked = ev.target.checked;
 
-    setTheme(checked ? "dark" : "light");
+    setTheme(checked ? "fsDark" : "fsLight");
   };
 
   return (
@@ -47,7 +47,7 @@ export const AppDrawer: React.FC = () => {
                 exit={{ opacity: 0 }}
                 className="appDrawer__logo"
               >
-                {theme === "dark" ? <LogoDark /> : <LogoLight />}
+                {theme === "fsDark" ? <LogoDark /> : <LogoLight />}
               </motion.div>
             )}
             {collapse && (
@@ -94,7 +94,7 @@ export const AppDrawer: React.FC = () => {
 
         <div className="flex flex-col">
           <label className="appDrawer__themeSwitch swap swap-rotate">
-            <input type="checkbox" defaultChecked={theme === "dark"} onChange={onChangeTheme} />
+            <input type="checkbox" defaultChecked={theme === "fsDark"} onChange={onChangeTheme} />
             <ThemeDarkIcon className="swap-off fill-current w-8 h-8" />
             <ThemeLightIcon className="swap-on fill-current w-8 h-8" />
           </label>
