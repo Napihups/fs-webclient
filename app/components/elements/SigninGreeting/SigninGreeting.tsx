@@ -10,7 +10,7 @@ export const SignInGreeting: React.FC = () => {
   return (
     <div className="signinGreeting">
       <p className="signinGreeting__greeting">{FIXTURES.signinPage.greeting}</p>
-      {theme === "dark" ? <LogoDark /> : <LogoLight />}
+      {theme !== null && <>{theme === "fsDark" ? <LogoDark /> : <LogoLight />}</>}
       <p className="signinGreeting__info">{FIXTURES.signinPage.info}</p>
     </div>
   );

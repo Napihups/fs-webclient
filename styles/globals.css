@@ -20,6 +20,7 @@ a {
 }
 
 /** Importing all css modules -------------------------*/
+
 @import "../app/components/layouts/Auth/AuthLayout.css";
 @import "../app/components/layouts/Default/DefaultLayout.css";
 

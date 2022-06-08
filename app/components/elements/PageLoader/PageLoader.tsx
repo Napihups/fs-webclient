@@ -38,9 +38,9 @@ export const PageLoader: React.FC<{ isRouteChanging: boolean }> = ({ isRouteChan
           width: 100px;
         }
       `}</style>
-      <div className="container">
-        <div className="bar bg-base">
-          <div className="spinner shadow-base shadow-lg" />
+      <div className="container z-[1000]">
+        <div className="bar bg-primary">
+          <div className="spinner shadow-primary shadow-lg" />
         </div>
       </div>
     </>

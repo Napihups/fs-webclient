@@ -15,37 +15,37 @@ export type DrawerNavigationMenuItem = {
 };
 export const DrawerNavigationMenus: DrawerNavigationMenuItem[] = [
   {
-    href: "#",
+    href: "/",
     label: FIXTURES.appDrawer.menuTexts.home,
     icon: DrawerHome,
     index: 0,
   },
   {
-    href: "#",
+    href: "/finance",
     label: FIXTURES.appDrawer.menuTexts.finance,
     icon: DrawerFinance,
     index: 1,
   },
   {
-    href: "#",
+    href: "/calendar",
     label: FIXTURES.appDrawer.menuTexts.calendar,
     icon: DrawerCalendar,
     index: 2,
   },
   {
-    href: "#",
+    href: "/timelines",
     label: FIXTURES.appDrawer.menuTexts.timelines,
     icon: DrawerTimelines,
     index: 3,
   },
   {
-    href: "#",
+    href: "/diary",
     label: FIXTURES.appDrawer.menuTexts.diary,
     icon: DrawerDiary,
     index: 4,
   },
   {
-    href: "#",
+    href: "/settings",
     label: FIXTURES.appDrawer.menuTexts.setting,
     icon: DrawerSetting,
     index: 5,

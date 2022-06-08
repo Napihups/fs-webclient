@@ -1,23 +1,19 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
 import type { NextPage } from "next";
-import Head from "next/head";
 
-const Home: NextPage = () => {
+const Diary: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Napigo - Home</title>
-      </Head>
+    <div>
       <main>
         <DefaultLayout>
-          <>Hello Home</>
+          <>Hello Diary</>
         </DefaultLayout>
       </main>
-    </>
+    </div>
   );
 };
 
-export default Home;
+export default Diary;
 
 /**
  *

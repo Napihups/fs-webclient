@@ -1,5 +1,5 @@
 .appDrawer {
-  @apply fixed w-[260px] h-screen bg-base-200 flex flex-col justify-between;
+  @apply fixed h-screen bg-base-200 flex flex-col justify-between transition;
 }
 
 .appDrawer__logobox {
@@ -36,6 +36,9 @@
   justify-start 
   normal-case
   font-normal;
+}
+.appDrawer__menu li.active {
+  @apply bg-primary border-primary text-primary-content;
 }
 
 .appDrawer__menuText {

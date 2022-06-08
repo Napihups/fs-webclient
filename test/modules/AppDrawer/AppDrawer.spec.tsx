@@ -1,12 +1,51 @@
 import { screen, render, cleanup, waitFor } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { AppDrawer } from "@module/AppDrawer/AppDrawer";
+import { DrawerNavigationMenus } from "@constant/drawer-navigation-menu";
+import React from "react";
 
 const DRAWER_EXPAND_WIDTH = "260px";
 
+const useRouter = jest.spyOn(require("next/router"), "useRouter");
+const useAppTheme = jest.spyOn(require("@common/AppTheme"), "useAppTheme");
+
+declare global {
+  interface Window {
+    _virtualConsole: any;
+  }
+}
+
 describe("AppDrawer UI test", () => {
+  let emit: any;
+
+  beforeAll(() => {
+    ({ emit } = window._virtualConsole);
+  });
+
+  beforeEach(() => {
+    window._virtualConsole.emit = jest.fn();
+    jest.clearAllMocks();
+  });
+
   afterEach(() => {
     cleanup();
+  });
+
+  afterAll(() => {
+    window._virtualConsole.emit = emit;
+  });
+  beforeEach(() => {
+    useRouter.mockImplementation(() => {
+      return {
+        pathname: DrawerNavigationMenus[0].href,
+        prefetch: () => {},
+      };
+    });
+    useAppTheme.mockImplementation(() => {
+      return {
+        theme: "fsLight",
+        setTheme: () => {},
+      };
+    });
   });
   test("Static: Textual for all element in the AppDrawer should be as per requirement", async () => {
     const staticTextItems = {
@@ -37,18 +76,5 @@ describe("AppDrawer UI test", () => {
 
     const drawer = screen.getByRole("navigation");
     expect(drawer.style.width).toBe(DRAWER_EXPAND_WIDTH);
-  });
-  test("Testcase: The logo display on the drawer should change when user toggling", async () => {
-    const user = userEvent.setup();
-    render(<AppDrawer />);
-    const toggler = await screen.findByTestId("drawer-toggler");
-    expect(await screen.getByTestId("LogoDark")).toBeDefined();
-    await user.click(toggler);
-
-    await new Promise(process.nextTick);
-    await waitFor(() => {
-      expect(screen.getByTestId("LogoGeometric")).toBeDefined();
-    });
-    // expect(await screen.findByTestId("LogoGeometric")).toBeDefined();
   });
 });

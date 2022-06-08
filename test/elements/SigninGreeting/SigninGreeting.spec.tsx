@@ -7,7 +7,7 @@ describe("SigninGreeting UI Test & Testing", () => {
   test("Static: SigninGreeting static text display should be correct", async () => {
     useAppTheme.mockImplementation(() => {
       return {
-        theme: "light",
+        theme: "fsLight",
       };
     });
     render(<SignInGreeting />);
@@ -19,7 +19,7 @@ describe("SigninGreeting UI Test & Testing", () => {
   test("Static: SigninGreeting Snapshot test", async () => {
     useAppTheme.mockImplementation(() => {
       return {
-        theme: "light",
+        theme: "fsLight",
       };
     });
     const comp = render(<SignInGreeting />);
@@ -29,7 +29,7 @@ describe("SigninGreeting UI Test & Testing", () => {
   test("Behaviour: SigninGreeting should dark logo for dark theme", async () => {
     useAppTheme.mockImplementation(() => {
       return {
-        theme: "dark",
+        theme: "fsDark",
       };
     });
 
@@ -42,7 +42,7 @@ describe("SigninGreeting UI Test & Testing", () => {
   test("Behaviour: SigninGreeting should light logo for light theme", async () => {
     useAppTheme.mockImplementation(() => {
       return {
-        theme: "light",
+        theme: "fsLight",
       };
     });
 
