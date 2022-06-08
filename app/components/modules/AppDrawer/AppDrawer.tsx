@@ -11,13 +11,15 @@ import { AppLogoBox } from "./AppLogoBox";
 const DRAWER_EXPAND_WIDTH = "260px";
 const DRAWER_COLLAPSE_WIDTH = "85px";
 
-export const AppDrawer: React.FC = () => {
-  const [collapse, setCollapse] = useState<boolean>(false);
-
+type AppDrawerProps = {
+  collapse: boolean;
+  onDrawerToggle: (collapse: boolean) => void;
+};
+export const AppDrawer: React.FC<AppDrawerProps> = ({ collapse, onDrawerToggle }) => {
   const { theme, setTheme } = useAppTheme();
 
   const onToggle = (ev: React.ChangeEvent<HTMLInputElement>) => {
-    setCollapse(!ev.target.checked);
+    onDrawerToggle(!ev.target.checked);
   };
 
   const onChangeTheme = (ev: React.ChangeEvent<HTMLInputElement>) => {
