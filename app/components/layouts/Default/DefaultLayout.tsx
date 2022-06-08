@@ -1,5 +1,5 @@
 import { AppDrawer } from "@module/AppDrawer/AppDrawer";
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 
 type DefaultProps = {
   children: React.ReactNode;
@@ -11,9 +11,9 @@ export const DefaultLayout: React.FC<DefaultProps> = ({ children }) => {
     setDrawerCollapse(collapse);
   };
   return (
-    <Fragment>
+    <div className="flex flex-row">
       <AppDrawer collapse={drawerCollapse} onDrawerToggle={onDrawerToggle} />
       <div className="defaultLayoutContainer">{children}</div>
-    </Fragment>
+    </div>
   );
 };
