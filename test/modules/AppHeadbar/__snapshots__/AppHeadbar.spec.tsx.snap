@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeadbar UI test Static: AppHeadbar snapshot test 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="appHeadbar"
+      >
+        <p
+          aria-level="1"
+          class="text-base-content uppercase font-bold"
+          role="heading"
+        >
+          FINANCE
+        </p>
+        <div
+          class="appHeadbar__right"
+        >
+          <form
+            class="mr-4"
+          >
+            <div
+              class="form-control"
+            >
+              <div
+                class="input-group"
+              >
+                <input
+                  class="input input-bordered min-w-[400px] "
+                  placeholder="Search…"
+                  type="text"
+                />
+                <button
+                  class="btn btn-squar"
+                  type="submit"
+                >
+                  <svg
+                    fill="none"
+                    height="25"
+                    width="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 24.988C1.404 24.977-4.177 11.502 3.661 3.649c4.653-4.849 13.025-4.85 17.678 0 7.838 7.854 2.256 21.328-8.839 21.339Zm0-23.047c-5.815 0-10.547 4.731-10.547 10.547.58 13.992 20.517 13.988 21.094 0 0-5.816-4.731-10.547-10.547-10.547Zm1.953 14.453a5.866 5.866 0 0 1-5.86-5.86c.323-7.773 11.399-7.77 11.72 0 0 3.232-2.629 5.86-5.86 5.86Zm0-9.766a3.91 3.91 0 0 0-3.906 3.907c.214 5.182 7.599 5.18 7.812 0a3.91 3.91 0 0 0-3.906-3.907Zm-7.52 12.256a.977.977 0 0 1-.681-1.677L8.06 15.45a.977.977 0 0 1 1.362 1.4l-1.806 1.758a.973.973 0 0 1-.681.276Zm9.522-8.35a2.004 2.004 0 0 0-2.002-2.001c-1.295.051-1.295 1.902 0 1.953.027 0 .049.022.049.049a.977.977 0 1 0 1.953 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+          <button
+            class="btn btn-square btn-ghost mx-1"
+            role="menuitem"
+            type="button"
+          >
+            <svg
+              fill="none"
+              height="20"
+              width="26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.258 11.588v-8.67a2.422 2.422 0 0 0-2.42-2.42H2.92A2.422 2.422 0 0 0 .5 2.919v8.67a2.422 2.422 0 0 0 2.42 2.419H5.09l.046 2.184a.807.807 0 0 0 1.292.627l3.729-2.811h7.68a2.422 2.422 0 0 0 2.42-2.42Zm-10.37.806a.806.806 0 0 0-.485.163l-2.687 2.025-.03-1.399a.807.807 0 0 0-.805-.789H2.919a.807.807 0 0 1-.806-.806v-8.67c0-.444.362-.806.806-.806h14.92c.444 0 .806.362.806.806v8.67a.807.807 0 0 1-.806.806h-7.95ZM25.5 7.96v6.653a2.422 2.422 0 0 1-2.42 2.42h-2.174l-.043 1.683a.807.807 0 0 1-.806.786c-.322 0-.143.056-4.177-2.47h-3.687a.806.806 0 1 1 0-1.613c4.278 0 4.078-.045 4.347.123l2.746 1.72.027-1.057a.807.807 0 0 1 .806-.786h2.962a.807.807 0 0 0 .806-.806V7.959a.807.807 0 0 0-.806-.807.806.806 0 1 1 0-1.613A2.422 2.422 0 0 1 25.5 7.96ZM15.42 5.79a.806.806 0 0 1-.807.807H6.145a.806.806 0 1 1 0-1.613h8.468c.445 0 .806.36.806.806ZM13.957 9.32a.806.806 0 0 1-.807.807H7.607a.806.806 0 1 1 0-1.613h5.544c.446 0 .807.361.807.806Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn btn-square btn-ghost mx-1"
+            role="menuitem"
+            type="button"
+          >
+            <svg
+              fill="none"
+              height="18"
+              viewBox="0 0 24 18"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.3333 17.0729H3.66659C2.9077 17.0702 2.18067 16.7675 1.64405 16.2309C1.10743 15.6943 0.804747 14.9672 0.802002 14.2083V3.79168C0.804747 3.03279 1.10743 2.30576 1.64405 1.76914C2.18067 1.23252 2.9077 0.929838 3.66659 0.927094H20.3333C21.0921 0.929838 21.8192 1.23252 22.3558 1.76914C22.8924 2.30576 23.1951 3.03279 23.1978 3.79168V14.2083C23.1951 14.9672 22.8924 15.6943 22.3558 16.2309C21.8192 16.7675 21.0921 17.0702 20.3333 17.0729ZM3.66659 2.48959C3.32125 2.48959 2.99006 2.62678 2.74587 2.87097C2.50169 3.11515 2.3645 3.44634 2.3645 3.79168V14.2083C2.3645 14.5537 2.50169 14.8849 2.74587 15.1291C2.99006 15.3732 3.32125 15.5104 3.66659 15.5104H20.3333C20.6786 15.5104 21.0098 15.3732 21.254 15.1291C21.4982 14.8849 21.6353 14.5537 21.6353 14.2083V3.79168C21.6353 3.44634 21.4982 3.11515 21.254 2.87097C21.0098 2.62678 20.6786 2.48959 20.3333 2.48959H3.66659Z"
+                fill="currentColor"
+              />
+              <path
+                d="M11.9999 10.4062C11.3954 10.4062 10.8019 10.2444 10.2811 9.93747L1.18739 4.53122C1.01748 4.42533 0.894008 4.259 0.841823 4.06572C0.789638 3.87244 0.812618 3.66657 0.906136 3.48956C1.01014 3.31747 1.17727 3.19283 1.37187 3.14224C1.56648 3.09164 1.77315 3.11909 1.9478 3.21872L11.052 8.61456C11.3281 8.78296 11.6452 8.87205 11.9686 8.87205C12.292 8.87205 12.6092 8.78296 12.8853 8.61456L21.9895 3.21872C22.1641 3.11909 22.3708 3.09164 22.5654 3.14224C22.76 3.19283 22.9271 3.31747 23.0311 3.48956C23.1247 3.66657 23.1476 3.87244 23.0954 4.06572C23.0433 4.259 22.9198 4.42533 22.7499 4.53122L13.7186 9.93747C13.1978 10.2444 12.6044 10.4062 11.9999 10.4062Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn btn-square btn-ghost hover:bg-transparent"
+          >
+            <div
+              class="avatar"
+            >
+              <div
+                class="appHeadbar__avatarMenu"
+              >
+                <span
+                  style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                  >
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+                      style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                    />
+                  </span>
+                  <img
+                    alt="Avatar"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    user-meta=""
+                  />
+                  <noscript />
+                </span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="appHeadbar"
+    >
+      <p
+        aria-level="1"
+        class="text-base-content uppercase font-bold"
+        role="heading"
+      >
+        FINANCE
+      </p>
+      <div
+        class="appHeadbar__right"
+      >
+        <form
+          class="mr-4"
+        >
+          <div
+            class="form-control"
+          >
+            <div
+              class="input-group"
+            >
+              <input
+                class="input input-bordered min-w-[400px] "
+                placeholder="Search…"
+                type="text"
+              />
+              <button
+                class="btn btn-squar"
+                type="submit"
+              >
+                <svg
+                  fill="none"
+                  height="25"
+                  width="25"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 24.988C1.404 24.977-4.177 11.502 3.661 3.649c4.653-4.849 13.025-4.85 17.678 0 7.838 7.854 2.256 21.328-8.839 21.339Zm0-23.047c-5.815 0-10.547 4.731-10.547 10.547.58 13.992 20.517 13.988 21.094 0 0-5.816-4.731-10.547-10.547-10.547Zm1.953 14.453a5.866 5.866 0 0 1-5.86-5.86c.323-7.773 11.399-7.77 11.72 0 0 3.232-2.629 5.86-5.86 5.86Zm0-9.766a3.91 3.91 0 0 0-3.906 3.907c.214 5.182 7.599 5.18 7.812 0a3.91 3.91 0 0 0-3.906-3.907Zm-7.52 12.256a.977.977 0 0 1-.681-1.677L8.06 15.45a.977.977 0 0 1 1.362 1.4l-1.806 1.758a.973.973 0 0 1-.681.276Zm9.522-8.35a2.004 2.004 0 0 0-2.002-2.001c-1.295.051-1.295 1.902 0 1.953.027 0 .049.022.049.049a.977.977 0 1 0 1.953 0Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <button
+          class="btn btn-square btn-ghost mx-1"
+          role="menuitem"
+          type="button"
+        >
+          <svg
+            fill="none"
+            height="20"
+            width="26"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.258 11.588v-8.67a2.422 2.422 0 0 0-2.42-2.42H2.92A2.422 2.422 0 0 0 .5 2.919v8.67a2.422 2.422 0 0 0 2.42 2.419H5.09l.046 2.184a.807.807 0 0 0 1.292.627l3.729-2.811h7.68a2.422 2.422 0 0 0 2.42-2.42Zm-10.37.806a.806.806 0 0 0-.485.163l-2.687 2.025-.03-1.399a.807.807 0 0 0-.805-.789H2.919a.807.807 0 0 1-.806-.806v-8.67c0-.444.362-.806.806-.806h14.92c.444 0 .806.362.806.806v8.67a.807.807 0 0 1-.806.806h-7.95ZM25.5 7.96v6.653a2.422 2.422 0 0 1-2.42 2.42h-2.174l-.043 1.683a.807.807 0 0 1-.806.786c-.322 0-.143.056-4.177-2.47h-3.687a.806.806 0 1 1 0-1.613c4.278 0 4.078-.045 4.347.123l2.746 1.72.027-1.057a.807.807 0 0 1 .806-.786h2.962a.807.807 0 0 0 .806-.806V7.959a.807.807 0 0 0-.806-.807.806.806 0 1 1 0-1.613A2.422 2.422 0 0 1 25.5 7.96ZM15.42 5.79a.806.806 0 0 1-.807.807H6.145a.806.806 0 1 1 0-1.613h8.468c.445 0 .806.36.806.806ZM13.957 9.32a.806.806 0 0 1-.807.807H7.607a.806.806 0 1 1 0-1.613h5.544c.446 0 .807.361.807.806Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <button
+          class="btn btn-square btn-ghost mx-1"
+          role="menuitem"
+          type="button"
+        >
+          <svg
+            fill="none"
+            height="18"
+            viewBox="0 0 24 18"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.3333 17.0729H3.66659C2.9077 17.0702 2.18067 16.7675 1.64405 16.2309C1.10743 15.6943 0.804747 14.9672 0.802002 14.2083V3.79168C0.804747 3.03279 1.10743 2.30576 1.64405 1.76914C2.18067 1.23252 2.9077 0.929838 3.66659 0.927094H20.3333C21.0921 0.929838 21.8192 1.23252 22.3558 1.76914C22.8924 2.30576 23.1951 3.03279 23.1978 3.79168V14.2083C23.1951 14.9672 22.8924 15.6943 22.3558 16.2309C21.8192 16.7675 21.0921 17.0702 20.3333 17.0729ZM3.66659 2.48959C3.32125 2.48959 2.99006 2.62678 2.74587 2.87097C2.50169 3.11515 2.3645 3.44634 2.3645 3.79168V14.2083C2.3645 14.5537 2.50169 14.8849 2.74587 15.1291C2.99006 15.3732 3.32125 15.5104 3.66659 15.5104H20.3333C20.6786 15.5104 21.0098 15.3732 21.254 15.1291C21.4982 14.8849 21.6353 14.5537 21.6353 14.2083V3.79168C21.6353 3.44634 21.4982 3.11515 21.254 2.87097C21.0098 2.62678 20.6786 2.48959 20.3333 2.48959H3.66659Z"
+              fill="currentColor"
+            />
+            <path
+              d="M11.9999 10.4062C11.3954 10.4062 10.8019 10.2444 10.2811 9.93747L1.18739 4.53122C1.01748 4.42533 0.894008 4.259 0.841823 4.06572C0.789638 3.87244 0.812618 3.66657 0.906136 3.48956C1.01014 3.31747 1.17727 3.19283 1.37187 3.14224C1.56648 3.09164 1.77315 3.11909 1.9478 3.21872L11.052 8.61456C11.3281 8.78296 11.6452 8.87205 11.9686 8.87205C12.292 8.87205 12.6092 8.78296 12.8853 8.61456L21.9895 3.21872C22.1641 3.11909 22.3708 3.09164 22.5654 3.14224C22.76 3.19283 22.9271 3.31747 23.0311 3.48956C23.1247 3.66657 23.1476 3.87244 23.0954 4.06572C23.0433 4.259 22.9198 4.42533 22.7499 4.53122L13.7186 9.93747C13.1978 10.2444 12.6044 10.4062 11.9999 10.4062Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <button
+          class="btn btn-square btn-ghost hover:bg-transparent"
+        >
+          <div
+            class="avatar"
+          >
+            <div
+              class="appHeadbar__avatarMenu"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Avatar"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  user-meta=""
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

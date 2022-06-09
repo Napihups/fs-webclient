@@ -1,13 +1,7 @@
-import { UserMeta } from "@fsTypes/common.types";
 import { AppHeadbar } from "@module/AppHeadbar/AppHeadBar";
-import { cleanup, render, screen } from "@testing-library/react";
+import { cleanup, render, screen, fireEvent } from "@testing-library/react";
 
-const user: UserMeta = {
-  name: "Hanafi",
-  sessionToken: "",
-  avatarUrl: "",
-  userRole: "standard",
-};
+const useRouter = jest.spyOn(require("next/router"), "useRouter");
 
 describe("AppHeadbar UI test", () => {
   let emit: any;
@@ -30,21 +24,27 @@ describe("AppHeadbar UI test", () => {
   });
 
   it("Static: display Title should be display correctly based on title props", async () => {
-    const title = "Finance";
+    const title = "FINANCE";
 
-    render(<AppHeadbar title={title} userMeta={user} />);
+    useRouter.mockImplementation(() => {
+      return {
+        pathname: "/finance",
+      };
+    });
+
+    render(<AppHeadbar />);
     expect(await screen.findByRole("heading", { name: title }));
   });
 
-  it("Static: having a user props should rendered the avatar component with the user infomation metadat", async () => {
-    const title = "Finance";
+  it("Static: AppHeadbar snapshot test", async () => {
+    useRouter.mockImplementation(() => {
+      return {
+        pathname: "/finance",
+      };
+    });
 
-    render(<AppHeadbar title={title} userMeta={user} />);
+    const comp = render(<AppHeadbar />);
 
-    const targetAvatar = await screen.findByRole("img");
-    const dataUser = targetAvatar.getAttribute("data-user");
-
-    expect(dataUser).toBeDefined();
-    expect(JSON.parse(dataUser as string)).toMatchObject<UserMeta>({ ...user });
+    expect(comp).toMatchSnapshot();
   });
 });
