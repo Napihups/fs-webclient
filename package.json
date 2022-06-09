@@ -15,11 +15,13 @@
     "@tanem/react-nprogress": "^5.0.0",
     "daisyui": "^2.15.2",
     "framer-motion": "^6.3.10",
+    "hex-to-rgba": "^2.0.1",
     "joi": "^17.6.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-lottie-player": "^1.4.3"
   },
   "devDependencies": {
     "@faker-js/faker": "^6.3.1",

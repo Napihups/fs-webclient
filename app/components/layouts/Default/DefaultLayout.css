@@ -6,7 +6,8 @@
   @apply sticky 
   top-0
   flex 
-  w-full bg-base-100 border-b-[1px] border-transparent;
+  z-50
+  w-full border-b-[1px] border-transparent;
 }
 
 .pageHead.scroll {
@@ -18,7 +19,8 @@
 }
 
 .inprogress {
-  @apply flex flex-col h-[500px] items-center justify-center;
+  @apply flex flex-col items-center justify-center z-0;
+  min-height: calc(100vh - 120px);
 }
 
 .inprogress h1 {

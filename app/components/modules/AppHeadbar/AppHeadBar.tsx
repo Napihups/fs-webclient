@@ -1,10 +1,4 @@
-import { MessageIcon } from "@element/Icons/MessageIcon";
-import { NotifIcon } from "@element/Icons/NotifIcon";
 import { SearchIcon } from "@element/Icons/SearchIcon";
-import { MessageDrawer } from "@module/MessageDrawer/MessageDrawer";
-import { NotificationDrawer } from "@module/NotificationDrawer/NotificationDrawer";
-import { UserMenu } from "@module/UserMenu/UserMenu";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useCallback } from "react";
 import { MessageDropdown } from "./MessageDropdown";
@@ -39,7 +33,7 @@ export const AppHeadbar: React.FC = ({}) => {
   }, [router.pathname]);
 
   return (
-    <div className="appHeadbar">
+    <nav className="appHeadbar">
       <p role="heading" aria-level={1} className="text-base-content uppercase font-bold mr-4">
         {getPageTitle()}
       </p>
@@ -65,6 +59,6 @@ export const AppHeadbar: React.FC = ({}) => {
         <NotificationDropdown />
         <UserMenuDropdown />
       </div>
-    </div>
+    </nav>
   );
 };

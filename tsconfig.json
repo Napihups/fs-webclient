@@ -30,7 +30,9 @@
       "@lib/*": ["app/lib/*"],
       "@fsTypes/*": ["app/types/*"],
       "@redux/*": ["app/redux/*"],
+      "@assets/*": ["app/assets/*"],
       "@pages/*": ["pages/*"],
+
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

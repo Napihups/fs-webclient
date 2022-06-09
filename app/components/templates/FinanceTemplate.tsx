@@ -1,9 +1,11 @@
+import { InProgress } from "@element/InProgress/InProgress";
 import React from "react";
 
 export const FinanceTemplate: React.FC = () => {
   return (
     <div className="inprogress">
-      <h1>Finance In-progress</h1>
+      <InProgress size={300} />
+      <p className="text-lg font-bold mt-2">Finance Page In-Progress</p>
     </div>
   );
 };

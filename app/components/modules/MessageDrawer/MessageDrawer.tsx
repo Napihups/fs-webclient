@@ -1,9 +1,10 @@
+import { InProgress } from "@element/InProgress/InProgress";
 import React from "react";
 
 export const MessageDrawer: React.FC = () => {
   return (
     <div className="messageDrawer">
-      <p>Messages In-Progress</p>
+      <InProgress size={300} />
     </div>
   );
 };
