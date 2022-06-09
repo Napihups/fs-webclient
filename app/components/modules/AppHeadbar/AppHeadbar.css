@@ -2,7 +2,11 @@
   @apply w-full h-[70px] bg-transparent flex flex-row px-[20px] items-center justify-between;
 }
 .appHeadbar__right {
-  @apply flex flex-row w-auto h-full items-center;
+  @apply flex 
+  flex-row 
+  h-full 
+  items-center 
+  border-[0px];
 }
 
 .appHeadbar__avatarMenu {
@@ -12,4 +16,45 @@
 
 .appHeadbar__avatarMenu.active {
   @apply ring-primary;
+}
+
+.appHeadbar__DropDown {
+  @apply absolute
+  origin-top-right
+  right-0
+  p-2
+  mt-2
+  shadow-xl
+  rounded-[10px]
+  w-[400px]
+  z-50
+  border-[1px]
+  border-base-200
+  bg-base-200
+  text-base-content
+  max-h-[500px] overflow-scroll;
+}
+
+.appHeadbar__DropDownToggler {
+  @apply btn btn-square btn-ghost mx-1;
+}
+.appHeadbar__DropDownToggler.active {
+  @apply border-primary text-primary bg-transparent;
+}
+
+.appHeadbar__userMenuDropdown {
+  @apply absolute
+  origin-top-right
+  right-0
+  p-2
+  mt-2
+  shadow-xl
+  border-[1px]
+  border-base-200
+  bg-base-200
+  text-base-content
+  h-[200px] overflow-scroll
+  rounded-[10px]
+  w-[250px]
+  z-50;
 }

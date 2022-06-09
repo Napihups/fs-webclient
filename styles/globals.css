@@ -29,3 +29,6 @@ a {
 @import "../app/components/modules/SignInForm/SignInForm.css";
 @import "../app/components/modules/AppDrawer/AppDrawer.css";
 @import "../app/components/modules/AppHeadbar/AppHeadbar.css";
+@import "../app/components/modules/MessageDrawer/MessageDrawer.css";
+@import "../app/components/modules/NotificationDrawer/NotificationDrawer.css";
+@import "../app/components/modules/UserMenu/UserMenu.css";

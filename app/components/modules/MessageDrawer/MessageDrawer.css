@@ -1,0 +1,14 @@
+.messageDrawer {
+  @apply flex 
+  w-full 
+  flex-col 
+  justify-center 
+  items-center 
+  h-[500px];
+}
+
+.messageDrawer p {
+  @apply font-bold 
+  text-lg 
+  text-base-content;
+}

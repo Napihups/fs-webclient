@@ -1,0 +1,8 @@
+.notificationDrawer {
+  @apply flex w-full flex-col
+  h-[500px] justify-center items-center;
+}
+
+.notificationDrawer p {
+  @apply font-bold text-lg text-base-content;
+}

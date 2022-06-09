@@ -1,9 +1,15 @@
 import { MessageIcon } from "@element/Icons/MessageIcon";
 import { NotifIcon } from "@element/Icons/NotifIcon";
 import { SearchIcon } from "@element/Icons/SearchIcon";
+import { MessageDrawer } from "@module/MessageDrawer/MessageDrawer";
+import { NotificationDrawer } from "@module/NotificationDrawer/NotificationDrawer";
+import { UserMenu } from "@module/UserMenu/UserMenu";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useCallback } from "react";
+import { MessageDropdown } from "./MessageDropdown";
+import { NotificationDropdown } from "./NotificationDropdown";
+import { UserMenuDropdown } from "./UserMenuDropdown";
 
 export const AppHeadbar: React.FC = ({}) => {
   const router = useRouter();
@@ -34,18 +40,19 @@ export const AppHeadbar: React.FC = ({}) => {
 
   return (
     <div className="appHeadbar">
-      <p role="heading" aria-level={1} className="text-base-content uppercase font-bold">
+      <p role="heading" aria-level={1} className="text-base-content uppercase font-bold mr-4">
         {getPageTitle()}
       </p>
 
       <div className="appHeadbar__right">
+        {/* Search Form Module component -------------------- */}
         <form onSubmit={onSubmit} className="mr-4">
           <div className="form-control">
             <div className="input-group">
               <input
                 type="text"
                 placeholder="Search…"
-                className="input input-bordered min-w-[400px] "
+                className="input input-bordered min-w-[300px]"
               />
               <button type="submit" className="btn btn-squar">
                 <SearchIcon />
@@ -53,25 +60,10 @@ export const AppHeadbar: React.FC = ({}) => {
             </div>
           </div>
         </form>
-        <button type="button" role="menuitem" className="btn btn-square btn-ghost mx-1">
-          <MessageIcon />
-        </button>
-        <button type="button" role="menuitem" className="btn btn-square btn-ghost mx-1">
-          <NotifIcon />
-        </button>
-        <button className="btn btn-square btn-ghost hover:bg-transparent">
-          <div className="avatar">
-            <div className="appHeadbar__avatarMenu">
-              <Image
-                width={"48px"}
-                height={"48px"}
-                alt="Avatar"
-                user-meta=""
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-              />
-            </div>
-          </div>
-        </button>
+        {/*  ------------------------------------------------ */}
+        <MessageDropdown />
+        <NotificationDropdown />
+        <UserMenuDropdown />
       </div>
     </div>
   );

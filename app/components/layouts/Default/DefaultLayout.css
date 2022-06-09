@@ -4,13 +4,13 @@
 
 .pageHead {
   @apply sticky 
-  top-0 
+  top-0
   flex 
   w-full bg-base-100 border-b-[1px] border-transparent;
 }
 
 .pageHead.scroll {
-  @apply border-base-200 shadow;
+  @apply shadow;
 }
 
 .pageContent {
@@ -22,5 +22,5 @@
 }
 
 .inprogress h1 {
-  @apply font-extrabold text-3xl opacity-50;
+  @apply font-extrabold text-3xl opacity-100;
 }
