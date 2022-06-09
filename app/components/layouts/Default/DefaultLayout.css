@@ -1,3 +1,26 @@
 .defaultLayoutContainer {
   @apply flex flex-col flex-1;
 }
+
+.pageHead {
+  @apply sticky 
+  top-0 
+  flex 
+  w-full bg-base-100 border-b-[1px] border-transparent;
+}
+
+.pageHead.scroll {
+  @apply border-base-200 shadow;
+}
+
+.pageContent {
+  @apply flex flex-col p-[20px];
+}
+
+.inprogress {
+  @apply flex flex-col h-[500px] items-center justify-center;
+}
+
+.inprogress h1 {
+  @apply font-extrabold text-3xl opacity-50;
+}

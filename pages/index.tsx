@@ -1,4 +1,5 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
+import { HomeTemplate } from "@template/HomeTemplate";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <DefaultLayout>
-          <>Hello Home</>
+          <HomeTemplate />
         </DefaultLayout>
       </main>
     </>

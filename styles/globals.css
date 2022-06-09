@@ -28,3 +28,4 @@ a {
 
 @import "../app/components/modules/SignInForm/SignInForm.css";
 @import "../app/components/modules/AppDrawer/AppDrawer.css";
+@import "../app/components/modules/AppHeadbar/AppHeadbar.css";

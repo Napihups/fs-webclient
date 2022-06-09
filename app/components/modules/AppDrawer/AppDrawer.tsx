@@ -1,8 +1,5 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAppTheme } from "@common/AppTheme";
-import { ThemeLightIcon } from "@element/Icons/ThemeLightIcon";
-import { ThemeDarkIcon } from "@element/Icons/ThemeDarkIcon";
 import { DrawerCollapseIcon } from "@element/Icons/DrawerCollapseIcon";
 import { DrawerExpandIcon } from "@element/Icons/DrawerExpandIcon";
 import { AppDrawerMenu } from "./AppDrawerMenu";
@@ -16,15 +13,8 @@ type AppDrawerProps = {
   onDrawerToggle: (collapse: boolean) => void;
 };
 export const AppDrawer: React.FC<AppDrawerProps> = ({ collapse, onDrawerToggle }) => {
-  const { theme, setTheme } = useAppTheme();
-
   const onToggle = (ev: React.ChangeEvent<HTMLInputElement>) => {
     onDrawerToggle(!ev.target.checked);
-  };
-
-  const onChangeTheme = (ev: React.ChangeEvent<HTMLInputElement>) => {
-    const checked = ev.target.checked;
-    setTheme(checked ? "fsDark" : "fsLight");
   };
 
   return (
@@ -33,7 +23,7 @@ export const AppDrawer: React.FC<AppDrawerProps> = ({ collapse, onDrawerToggle }
         initial={{ width: collapse ? DRAWER_EXPAND_WIDTH : DRAWER_COLLAPSE_WIDTH }}
         animate={{ width: collapse ? DRAWER_COLLAPSE_WIDTH : DRAWER_EXPAND_WIDTH }}
         transition={{ delay: collapse ? 0.15 : 0 }}
-        className="appDrawer"
+        className={`appDrawer`}
         role="navigation"
       >
         <div className="w-full">
@@ -42,14 +32,6 @@ export const AppDrawer: React.FC<AppDrawerProps> = ({ collapse, onDrawerToggle }
         </div>
 
         <div className="flex flex-col">
-          {theme !== null && (
-            <label className="appDrawer__themeSwitch swap swap-rotate">
-              <input type="checkbox" defaultChecked={theme === "fsDark"} onChange={onChangeTheme} />
-              <ThemeDarkIcon className="swap-on fill-current w-8 h-8" />
-              <ThemeLightIcon className="swap-off fill-current w-8 h-8" />
-            </label>
-          )}
-
           <label className="appDrawer__toggler swap swap-rotate">
             <input
               type="checkbox"

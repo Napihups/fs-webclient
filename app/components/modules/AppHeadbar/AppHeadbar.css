@@ -1,0 +1,15 @@
+.appHeadbar {
+  @apply w-full h-[70px] bg-transparent flex flex-row px-[20px] items-center justify-between;
+}
+.appHeadbar__right {
+  @apply flex flex-row w-auto h-full items-center;
+}
+
+.appHeadbar__avatarMenu {
+  @apply w-9 rounded-full ring ring-base-200 ring-offset-base-200 ring-offset-2
+  hover:ring-primary transition;
+}
+
+.appHeadbar__avatarMenu.active {
+  @apply ring-primary;
+}

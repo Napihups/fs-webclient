@@ -1,5 +1,13 @@
 .appDrawer {
-  @apply h-screen bg-base-200 flex flex-col justify-between transition;
+  @apply fixed 
+  top-0 
+  h-screen 
+  bg-base-100 
+  flex 
+  flex-col 
+  justify-between
+  transition
+  border-r-[1px] border-base-200;
 }
 
 .appDrawer__logobox {
@@ -18,7 +26,7 @@
   flex flex-col
   gap-2
   px-[10px]
-  m-0 overflow-hidden;
+  m-0 overflow-scroll;
 }
 .appDrawer__menu li {
   @apply btn

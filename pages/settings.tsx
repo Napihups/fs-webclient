@@ -1,4 +1,5 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
+import { SettingsTemplate } from "@template/SettingsTemplate";
 import type { NextPage } from "next";
 
 const Settings: NextPage = () => {
@@ -6,7 +7,7 @@ const Settings: NextPage = () => {
     <div>
       <main>
         <DefaultLayout>
-          <>Hello Settings</>
+          <SettingsTemplate />
         </DefaultLayout>
       </main>
     </div>

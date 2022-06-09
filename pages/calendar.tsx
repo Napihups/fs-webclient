@@ -1,4 +1,5 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
+import { CalendarTemplate } from "@template/CalendarTemplate";
 import type { NextPage } from "next";
 
 const Calendar: NextPage = () => {
@@ -6,7 +7,7 @@ const Calendar: NextPage = () => {
     <div>
       <main>
         <DefaultLayout>
-          <>Hello Calendar</>
+          <CalendarTemplate />
         </DefaultLayout>
       </main>
     </div>

@@ -1,4 +1,5 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
+import { TimelinesTemplate } from "@template/TimelinesTemplate";
 import type { NextPage } from "next";
 
 const Timelines: NextPage = () => {
@@ -6,7 +7,7 @@ const Timelines: NextPage = () => {
     <div>
       <main>
         <DefaultLayout>
-          <>Hello Timelines</>
+          <TimelinesTemplate />
         </DefaultLayout>
       </main>
     </div>

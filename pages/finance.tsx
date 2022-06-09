@@ -1,4 +1,5 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
+import { FinanceTemplate } from "@template/FinanceTemplate";
 import type { NextPage } from "next";
 
 const Finance: NextPage = () => {
@@ -6,7 +7,7 @@ const Finance: NextPage = () => {
     <div>
       <main>
         <DefaultLayout>
-          <>Hello Finance</>
+          <FinanceTemplate />
         </DefaultLayout>
       </main>
     </div>

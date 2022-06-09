@@ -1,4 +1,5 @@
 import { DefaultLayout } from "@layout/Default/DefaultLayout";
+import { DiaryTemplate } from "@template/DiaryTemplate";
 import type { NextPage } from "next";
 
 const Diary: NextPage = () => {
@@ -6,7 +7,7 @@ const Diary: NextPage = () => {
     <div>
       <main>
         <DefaultLayout>
-          <>Hello Diary</>
+          <DiaryTemplate />
         </DefaultLayout>
       </main>
     </div>
